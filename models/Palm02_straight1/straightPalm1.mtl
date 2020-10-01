@@ -1,0 +1,26 @@
+# Blender MTL File: 'straightPalm1.blend'
+# Material Count: 2
+
+newmtl Palm_Bark_01_Mat
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.262732 0.228627 0.192704
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Bump Nature_Bark_Palm_01_Norm.tga
+map_Kd Nature_Bark_Palm_01_Diff.tga
+
+newmtl Palm_Leave_01_Mat
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.015367 0.031063 0.002044
+Ks 0.000000 0.000000 0.000000
+Ke 0.003073 0.006213 0.000409
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd Nature_Leaves_Palm_01_DiffMask.tga
+map_d Nature_Leaves_Palm_01_DiffMask.tga

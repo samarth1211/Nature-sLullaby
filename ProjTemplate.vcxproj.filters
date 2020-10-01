@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\SOIL2">
+      <UniqueIdentifier>{22babeae-6fc4-421c-b44f-4d8709953375}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadTGATexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Points.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skydome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadShaderFromFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SunLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="models\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="models\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadShaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\etc1_utils.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\image_DXT.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\image_helper.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\jo_jpeg.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\pkm_helper.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\pvr_helper.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\SOIL2.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stb_image_write.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_DDS.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_DDS_c.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_ext.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_ext_c.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_pkm.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_pkm_c.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_pvr.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SOIL2\stbi_pvr_c.h">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClInclude>
+    <ClInclude Include="temp_lake1_grass_coords.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BushLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PalmLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MarigoldLocations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LotusLeafData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlockingButterfiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audioManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="soundSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CWaves.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Credits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomFontRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadTGATexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skydome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadShaderFromFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SunLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadShaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="models\SOIL2\etc1_utils.c">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="models\SOIL2\image_DXT.c">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="models\SOIL2\image_helper.c">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="models\SOIL2\SOIL2.c">
+      <Filter>Source Files\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FlockingButterfiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audioManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="soundSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWaves.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Credits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomFontRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

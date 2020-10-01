@@ -1,0 +1,50 @@
+# Blender MTL File: 'None'
+# Material Count: 4
+
+newmtl Material__47.001
+Ns 3.921569
+Ka 0.588000 0.588000 0.588000
+Kd 1.000000 1.000000 1.000000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd stem.tga
+map_d stem.tga
+
+newmtl Material__48.001
+Ns 9.803922
+Ka 0.588000 0.588000 0.588000
+Kd 1.000000 1.000000 1.000000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Leaves.tga
+map_d Leaves.tga
+
+newmtl Material__49.001
+Ns 3.921569
+Ka 0.588000 0.588000 0.588000
+Kd 1.000000 1.000000 1.000000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd pollen.tga
+map_d pollen.tga
+
+newmtl Material__50.001
+Ns 3.921569
+Ka 0.588000 0.588000 0.588000
+Kd 1.000000 1.000000 1.000000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd petals.tga
+map_d petals.tga

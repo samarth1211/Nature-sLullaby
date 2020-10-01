@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3940EAC5-1933-40A2-BB59-6C97AEABF700}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProjTemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)assimp\include;$(SolutionDir)ext\DevIL\include;$(SolutionDir)ext\glew\include;$(SolutionDir)ext\freetype;$(SolutionDir)ext\FreeImage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)ext\freetype\win32;$(SolutionDir)ext\assimp\lib\x86;$(SolutionDir)ext\DevIL\lib\x86\Release;$(SolutionDir)ext\glew\lib\Release\Win32;$(SolutionDir)ext\FreeImage\lib\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q /D "$(SolutionDir)ext\glew\lib\Release\Win32\glew32.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\FreeImage\lib\x32\FreeImage.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x86\Release\DevIL.dll" "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x86\Release\ILU.dll" "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x86\Release\ILUT.dll" "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\assimp\lib\x86\assimp-vc140-mt.dll" "$(TargetDir)."
+xcopy /Y /Q /D  "$(SolutionDir)ext\freetype\win32\freetype.dll" "$(TargetDir)."
+
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)ext\freetype\include;$(SolutionDir)ext\OpenAL\include;$(SolutionDir)ext\assimp\include;$(SolutionDir)ext\DevIL\include;$(SolutionDir)ext\FreeImage\include;$(SolutionDir)ext\freetype;$(SolutionDir)ext\OPenGL_Math_Lib;$(SolutionDir)ext\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)ext\freetype\win64;$(SolutionDir)ext\OpenAL\libs\Win64;$(SolutionDir)ext\assimp\lib\x64;$(SolutionDir)ext\DevIL\lib\x64\Release;$(SolutionDir)ext\glew\lib\Release\x64;$(SolutionDir)ext\FreeImage\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q /D "$(SolutionDir)ext\glew\lib\Release\x64\glew32.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\FreeImage\lib\x64\FreeImage.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x64\Release\DevIL.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x64\Release\ILU.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x64\Release\ILUT.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\assimp\lib\x64\assimp-vc140-mt.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\OpenAL\libs\Win64\OpenAL32.lib"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\freetype\win64\freetype.dll"  "$(TargetDir)."
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)assimp\include;$(SolutionDir)ext\DevIL\include;$(SolutionDir)ext\glew\include;$(SolutionDir)ext\freetype;$(SolutionDir)ext\FreeImage\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)ext\freetype\win32;$(SolutionDir)ext\assimp\lib\x86;$(SolutionDir)ext\DevIL\lib\x86\Release;$(SolutionDir)ext\glew\lib\Release\Win32;$(SolutionDir)ext\FreeImage\lib\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q /D "$(SolutionDir)ext\glew\lib\Release\Win32\glew32.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\FreeImage\lib\x32\FreeImage.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x86\Release\DevIL.dll" "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x86\Release\ILU.dll" "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x86\Release\ILUT.dll" "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\assimp\lib\x86\assimp-vc140-mt.dll" "$(TargetDir)."
+xcopy /Y /Q /D  "$(SolutionDir)ext\freetype\win32\freetype.dll" "$(TargetDir)."
+
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)ext\freetype\include;$(SolutionDir)ext\OpenAL\include;$(SolutionDir)ext\assimp\include;$(SolutionDir)ext\DevIL\include;$(SolutionDir)ext\FreeImage\include;$(SolutionDir)ext\freetype;$(SolutionDir)ext\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)ext\freetype\win64;$(SolutionDir)ext\OpenAL\libs\Win64;$(SolutionDir)ext\assimp\lib\x64;$(SolutionDir)ext\DevIL\lib\x64\Release;$(SolutionDir)ext\glew\lib\Release\x64;$(SolutionDir)ext\FreeImage\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q /D "$(SolutionDir)ext\glew\lib\Release\x64\glew32.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\FreeImage\lib\x64\FreeImage.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x64\Release\DevIL.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x64\Release\ILU.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\DevIL\lib\x64\Release\ILUT.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\assimp\lib\x64\assimp-vc140-mt.dll"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\OpenAL\libs\Win64\OpenAL32.lib"  "$(TargetDir)."
+xcopy /Y /Q /D "$(SolutionDir)ext\freetype\win64\freetype.dll"  "$(TargetDir)."</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimMesh.h" />
+    <ClInclude Include="AnimModel.h" />
+    <ClInclude Include="audioManager.h" />
+    <ClInclude Include="BushLocation.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CommonHeader.h" />
+    <ClInclude Include="Credits.h" />
+    <ClInclude Include="CubeMap.h" />
+    <ClInclude Include="CustomFontRenderer.h" />
+    <ClInclude Include="CWaves.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="FlockingButterfiles.h" />
+    <ClInclude Include="Grass.h" />
+    <ClInclude Include="LoadShaderFromFile.h" />
+    <ClInclude Include="LoadShaders.h" />
+    <ClInclude Include="LoadTGATexture.h" />
+    <ClInclude Include="LotusLeafData.h" />
+    <ClInclude Include="MarigoldLocations.h" />
+    <ClInclude Include="models\Mesh.h" />
+    <ClInclude Include="models\Model.h" />
+    <ClInclude Include="models\SOIL2\etc1_utils.h" />
+    <ClInclude Include="models\SOIL2\image_DXT.h" />
+    <ClInclude Include="models\SOIL2\image_helper.h" />
+    <ClInclude Include="models\SOIL2\jo_jpeg.h" />
+    <ClInclude Include="models\SOIL2\pkm_helper.h" />
+    <ClInclude Include="models\SOIL2\pvr_helper.h" />
+    <ClInclude Include="models\SOIL2\SOIL2.h" />
+    <ClInclude Include="models\SOIL2\stbi_DDS.h" />
+    <ClInclude Include="models\SOIL2\stbi_DDS_c.h" />
+    <ClInclude Include="models\SOIL2\stbi_ext.h" />
+    <ClInclude Include="models\SOIL2\stbi_ext_c.h" />
+    <ClInclude Include="models\SOIL2\stbi_pkm.h" />
+    <ClInclude Include="models\SOIL2\stbi_pkm_c.h" />
+    <ClInclude Include="models\SOIL2\stbi_pvr.h" />
+    <ClInclude Include="models\SOIL2\stbi_pvr_c.h" />
+    <ClInclude Include="models\SOIL2\stb_image_write.h" />
+    <ClInclude Include="PalmLocation.h" />
+    <ClInclude Include="Points.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="skydome.h" />
+    <ClInclude Include="soundSource.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="SunLight.h" />
+    <ClInclude Include="temp_lake1_grass_coords.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="Triangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimMesh.cpp" />
+    <ClCompile Include="AnimModel.cpp" />
+    <ClCompile Include="audioManager.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Credits.cpp" />
+    <ClCompile Include="CubeMap.cpp" />
+    <ClCompile Include="CustomFontRenderer.cpp" />
+    <ClCompile Include="CWaves.cpp" />
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="FlockingButterfiles.cpp" />
+    <ClCompile Include="LoadShaderFromFile.cpp" />
+    <ClCompile Include="LoadShaders.cpp" />
+    <ClCompile Include="LoadTGATexture.cpp" />
+    <ClCompile Include="models\SOIL2\etc1_utils.c" />
+    <ClCompile Include="models\SOIL2\image_DXT.c" />
+    <ClCompile Include="models\SOIL2\image_helper.c" />
+    <ClCompile Include="models\SOIL2\SOIL2.c" />
+    <ClCompile Include="Skydome.cpp" />
+    <ClCompile Include="soundSource.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="SunLight.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

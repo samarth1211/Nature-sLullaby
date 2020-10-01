@@ -1,0 +1,15 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl Flower_3_versiya_3
+Ns 282.352941
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Flower_3_diffuse_v3.png
+map_Bump Flower_3_normal_v3.png
+map_Ks Flower_3_Reflection_v3.png
